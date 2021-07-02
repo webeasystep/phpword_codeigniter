@@ -1,5 +1,12 @@
 <?php
 /* @property phpword_model $phpword_model */
+include_once(APPPATH."third_party/PhpWord/Autoloader.php");
+include_once(APPPATH."core/Front_end.php");
+
+use PhpOffice\PhpWord\Autoloader;
+use PhpOffice\PhpWord\Settings;
+Autoloader::register();
+Settings::loadConfig();
 
 class Phpword extends Front_end {
 
